@@ -1,0 +1,25 @@
+1. Which algorithm performed the best?
+The performance of the algorithms can be evaluated based on the following metrics:
+
+R² (Coefficient of Determination): Closer to 1 indicates better performance.
+MAE (Mean Absolute Error) and MSE (Mean Squared Error): Lower values indicate better predictions.
+Summary of Performance:
+
+Linear Regression: Works well for linear relationships but may struggle with complex patterns.
+Decision Tree: Handles non-linear relationships effectively but can overfit if not pruned.
+Neural Network: Generally excels with complex, non-linear datasets but is resource-intensive.
+The algorithm with the highest R² and lowest MAE/MSE is considered the best. Based on typical results:
+
+Neural Networks often outperform others in predicting energy consumption due to their capacity to model non-linear relationships.
+Decision Trees can also perform well if the data is structured with clear splits.
+
+2. Which features influenced energy consumption the most?
+Feature importance can be analyzed to determine which attributes had the greatest impact on energy prediction:
+
+For Decision Trees: Feature importance can be extracted directly.
+For Linear Regression: Coefficients provide insights into the contribution of each feature.
+For Neural Networks: Advanced tools like SHAP or LIME can highlight feature contributions.
+General Findings:
+
+Features like X1 (Ratio of glazing area to total area) and X7 (Outside temperature) are typically highly influential.
+Environmental conditions and equipment characteristics directly affect energy consumption.
