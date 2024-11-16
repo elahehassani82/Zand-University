@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+# Plotting predictions vs actual values for Linear Regression
+plt.figure(figsize=(10, 6))
+plt.scatter(Y_test, Y_pred_lr, alpha=0.7, label="Linear Regression")
+plt.scatter(Y_test, Y_pred_tree, alpha=0.7, label="Decision Tree")
+plt.scatter(Y_test, Y_pred_mlp, alpha=0.7, label="Neural Network")
+plt.plot([Y_test.min(), Y_test.max()], [Y_test.min(), Y_test.max()], color='red', linestyle='--', label="Ideal")
+plt.xlabel("Actual Values")
+plt.ylabel("Predicted Values")
+plt.legend()
+plt.title("Comparison of Model Predictions")
+plt.show()
